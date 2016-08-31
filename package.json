@@ -1,0 +1,31 @@
+{
+  "name": "personal_website",
+  "version": "1.0.0",
+  "description": "my whole new remaked website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amirmekk/personalWebsite.git"
+  },
+  "author": "amir mekk <amirmekktv@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amirmekk/personalWebsite/issues"
+  },
+  "homepage": "https://github.com/amirmekk/personalWebsite#readme",
+  "dependencies": {
+    "animate": "^1.0.0",
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-connect": "^5.0.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}
