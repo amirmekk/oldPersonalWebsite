@@ -4,26 +4,103 @@
     <meta charset="UTF-8" />
     <title>Amir Mekk</title>
     <link rel="icon" type="image/png" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href='style.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 </head>
 <body>
-    <header>
+    <header class='row'>
         <ul>
-            <li class='first'><a href='https://www.google.com' >Amir Mekk</a></li>
-            <li><a href='' >Skills</a></li>
-            <li><a href=''>Projects</a></li>
-            <li id='last_item'><a href='' >Contact me</a></li><br/>
+            <div class='col-md-7 col-xs-12'>
+            <li class='first_li'>
+                <a href='#' >Amir Mekk</a>
+            </li>
+            </div>
+            <div class="col-md-5 col-xs-12">
+            <li>
+                <a href='#Skills' ><i class='fa fa-briefcase'></i> Skills</a>
+            </li>
+            <li>
+                <a href='#Projects'><i class='fa fa-folder-open'></i> Projects</a>
+            </li>
+            <li id='last_item'>
+                <a href='#contact' ><i class='fa fa-envelope'></i> Contact me</a>
+            </li>
+            </div>
+            <br />
         </ul>
-    </header>
-    <!-- <section id='about'>
-        <img src='' title='ME' alt='personal picture' />
-        <p>My name is <span id='name'>Amir Mekk</span> ,<br/>
-        &#128513; I am a self taught Front-end developer [The job of creating the visuel part of websites and web apps for those who don't know ],<br/>
-        &#128084; I have one year of practical extensive experience,<br />
-        &#128690; I love all kinds of bike riding specaily cross country,<br/>
-        &#128218; I can speak English fluently  , just intermediate at french + I'm native arabic speaker.</p>
-    </section> -->
+    </header><br />
+    <div class='container-fluid'>
+    <section id='about' class='row'>
+            <div class='col-md-4'>
+                <img src='picture.png' title='ME' alt='personal picture' />
+            </div>
+             <div class='col-md-8'>
+                 <p>My name is <span id='name'>Amir Mekk</span> ,<br />
+                  &#128513; I am a self taught Front-end developer ,<br />
+                  &#128084; I have one year of practical extensive experience ,<br />
+                  &#128690; I love all kinds of bike riding specaily cross country ,<br />
+                  &#128218; I can speak English fluently  , just intermediate at french + I'm native arabic speaker .</p>
+            </div>
+    </section> <br />
+    <section id='skills' class='row text-center'>
+        <div class='col-md-12'>
+        <p>This is more of technical stuff ,<br />These are the latest technologies that I am proficient at + I am learning new things everyday.</p>
+        </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <p>HTML5</p>
+            <img src='html.png' title='HTML5' alt='HTML5' />
+        </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <p>CSS3</p>
+            <img src='css.png' title='CSS3' alt='CSS3' />
+        </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <p>javaScript</p>
+            <img src='js.png' title='javaScript' alt='javaScript' />
+        </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <p>jQuery</p>
+            <img src='jquery.png' title='jQuery' alt='jQuery' />
+        </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <p>Git + GitHub</p>
+            <img src='git.png' title='Git + GitHub' alt='Git + GitHub' />
+        </div>
+        <div class='col-md-3 col-sm-4 col-xs-6'>
+            <p>Gulp</p>
+            <img src='gulp.png' title='Gulp' alt='Gulp' />
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-6 text-center'>
+            <p>Bootstrap</p>
+            <img src='Bootstrap.png' title='Bootstrap' alt='Bootstrap' />
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-6 text-center''>
+            <p>In progress ...</p>
+            <img src='next.png' title='in progress' alt='in progress' />
+        </div
+    </section>
+    <section id='projects'>
+        <p>These are the projects that I made , try coming back once a month/week because I am updating this list very often</p>
+    </section>
+    </div>
+    <footer id='contact' class='row'>
+        <a href='https://github.com/amirmekk' target='_blank'>
+            <img src='github.png' title='github' alt='github' />
+        </a>
+        <a href='http://codepen.io/amirmekk/' target='_blank'>
+            <img src='codepen.png' title='codepen' alt='codepen' />
+        </a>
+        <a href='mailto:amirmekktv@gmail.com'>
+            <img src='email.png' title='email' alt='email' />
+        </a>
+        <a href='https://www.instagram.com/amirmekk_/' target='_blank'>
+            <img src='instagram.png' title='instagram' alt='instagram' />
+        </a>
+    </footer>
     <script src='../node_modules/jquery/dist/jquery.min.js' />
     <script src='app.js' />
 </body>
