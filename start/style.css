@@ -1,16 +1,5 @@
-/* RE-MAKING DEFAULT VALUES TO THIS ELEMENTS */
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  background: transparent 
-}
-/* END */
-
 body {
-  font-family : 'Source Sans Pro', sans-serif;
+  font-family : 'Open Sans Condensed', sans-serif;
 }
 /* header styling */
 header {
@@ -20,6 +9,7 @@ header {
     background: -o-linear-gradient(bottom right, #34495e, #16a085); 
     background: -moz-linear-gradient(bottom right, #34495e #16a085); 
     background: linear-gradient(to bottom right, #34495e, #16a085); 
+    /* box-shadow : 0px 20px 5px #16a085 ; */
 }
 header ul {
     padding : 1% ;
@@ -33,17 +23,16 @@ header ul li {
     margin-bottom: 0%; 
     font-size : 150% ;
     border-radius: 5px ;
-    color : #95a5a6 ;
-}
-header ul li:hover {
     color : white ;
 }
+
 .first_li {
     margin-left : 2% ;
     margin-top : 0.001% ;
     font-size: 250% ;
     border : none ;
     color : white ;
+    font-family: 'Fjalla One' , sans-serif ;
 }
 header ul li a {
     color : white ;
@@ -52,6 +41,7 @@ header ul li a {
 }
 /* END of header styling  */ 
 
+/* about styling */
 #about {
     text-align: center ; 
     background: #16a085; 
@@ -60,7 +50,7 @@ header ul li a {
     background: -moz-linear-gradient(right, #107360 #38e4c3); 
     background: linear-gradient(to right, #107360, #38e4c3);
     padding : 5% ; 
-    margin-top : -2% ; 
+    margin-top : -1.5% ; 
 }
 #about img {
     border-radius : 10px ;
@@ -77,9 +67,54 @@ header ul li a {
     color : white ;
 }
 #about p #name {
-    font-size : 200% ;
+    font-size : 180% ;
     font-weight: bold ;
+    font-family: 'Fjalla One' , sans-serif ;
 }
+/* END of About section styling */
+
+/* Skills styling*/
+#skills {
+    background: #8e44ad;    
+    background: -webkit-linear-gradient(left top, #38e4c3, #8e44ad);
+    background: -o-linear-gradient(bottom right, #38e4c3, #8e44ad); 
+    background: -moz-linear-gradient(bottom right, #38e4c3 #8e44ad); 
+    background: linear-gradient(to bottom right, #38e4c3, #8e44ad);
+    margin-top : -2% ;
+    color : white ;
+}
+#skills #first_p{
+    font-size : 200% ;
+    font-weight : bold ;
+    padding-bottom : 4% ;
+    padding-top : 2% ;
+}
+#skills p:not(#first_p) {
+    color : white ;
+    font-weight : bold ;
+    font-size: 130% ;
+}
+#skills div:not(.col-md-12){
+    margin-bottom : 3% ; 
+    margin-top : 3% ; 
+} 
+#skills .col-md-12 {
+    margin-bottom : -3% ;
+}
+/* END of Skills styling */
+/* PROJECTS styling */
+#projects {
+    background: #8e44ad;    
+    background: -webkit-linear-gradient(left top, #a563c1, #2c3e50);
+    background: -o-linear-gradient(bottom right, #a563c1, #2c3e50); 
+    background: -moz-linear-gradient(bottom right, #a563c1 #2c3e50); 
+    background: linear-gradient(to bottom right, #a563c1, #2c3e50);
+    color : white ;
+
+}
+
+
+/* END PROJECTS styling */
 /* FOOTER STYLING */
 footer {
     background: #2c3e50; 
