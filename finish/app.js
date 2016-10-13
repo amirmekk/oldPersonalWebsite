@@ -1,0 +1,1 @@
+(new WOW).init(),$(document).ready(function(){$("a").on("click",function(t){if(""!==this.hash){t.preventDefault();var o=this.hash;$("html, body").animate({scrollTop:$(o).offset().top},650,function(){window.location.hash=o})}}),$("#owl").owlCarousel({items:4,itemsTablet:[768,2],itemsMobile:[479,1],navigation:!0,autoPlay:3e3})});

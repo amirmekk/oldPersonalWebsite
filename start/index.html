@@ -10,27 +10,26 @@
     <link href="bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href='style.css' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="owl.css"/>
+    <link rel="stylesheet" href="owltheme.css"/>
 </head>
 <body>
     <header class='row'>
         <ul>
-            <div class='col-md-7 col-xs-12'>
+            <div class='col-lg-9 col-md-7 col-xs-12'>
             <li class='first_li'>
                 <a href='#' >Amir Mekk</a>
             </li>
             </div>
-            <div class="col-md-5 col-xs-12">
+            <div class="col-lg-3 col-md-5 col-xs-12">
             <li>
-                <a href='#Skills' ><i class='fa fa-briefcase'></i> Skills</a>
+                <a href='#skills' ><i class='fa fa-briefcase'></i> Skills</a>
             </li>
             <li>
-                <a href='#Projects'><i class='fa fa-folder-open'></i> Projects</a>
+                <a href='#projects'><i class='fa fa-folder-open'></i> Projects</a>
             </li>
             <li id='last_item'>
-                <a href='#contact' ><i class='fa fa-envelope'></i> Contact me</a>
-            </li>
-            <li>
-                <a href='#menu' ><i class='fa fa-bars'></i></a>
+                <a href='#contact' ><i class='fa fa-envelope'></i> Contact</a>
             </li>
             </div>
             <br />
@@ -53,35 +52,35 @@
         <div class='col-md-12'>
         <p id='first_p'>This is more of technical stuff ,<br />These are the latest technologies that I am proficient at + I am learning new things everyday.</p>
         </div>
-        <div class='col-md-3 col-sm-4 col-xs-6'>
+        <div class='col-md-3 col-sm-4 col-xs-6 animated wow bounceInLeft'>
             <p>HTML5</p>
-            <img src='images/html.png' title='HTML5' alt='HTML5' class='wow bounceInLeft' />
+            <img src='images/html.png' title='HTML5' alt='HTML5' />
         </div>
-        <div class='col-md-3 col-sm-4 col-xs-6'>
+        <div class='col-md-3 col-sm-4 col-xs-6 animated wow bounceInDown'>
             <p>CSS3</p>
             <img src='images/css.png' title='CSS3' alt='CSS3' />
         </div>
-        <div class='col-md-3 col-sm-4 col-xs-6'>
+        <div class='col-md-3 col-sm-4 col-xs-6 animated wow bounceInDown'>
             <p>javaScript</p>
             <img src='images/js.png' title='javaScript' alt='javaScript' />
         </div>
-        <div class='col-md-3 col-sm-4 col-xs-6'>
+        <div class='col-md-3 col-sm-4 col-xs-6 animated wow bounceInRight'>
             <p>jQuery</p>
             <img src='images/jquery.png' title='jQuery' alt='jQuery' />
         </div>
-        <div class='col-md-3 col-sm-4 col-xs-6'>
+        <div class='col-md-3 col-sm-4 col-xs-6 animated wow bounceInLeft'>
             <p>Git + GitHub</p>
             <img src='images/git.png' title='Git + GitHub' alt='Git + GitHub' />
         </div>
-        <div class='col-md-3 col-sm-4 col-xs-6'>
+        <div class='col-md-3 col-sm-4 col-xs-6 animated wow bounceInUp'>
             <p>Gulp</p>
             <img src='images/gulp.png' title='Gulp' alt='Gulp' />
         </div>
-        <div class='col-md-3 col-sm-6 col-xs-6 text-center'>
+        <div class='col-md-3 col-sm-6 col-xs-6 text-center animated wow bounceInUp'>
             <p>Bootstrap</p>
             <img src='images/Bootstrap.png' title='Bootstrap' alt='Bootstrap' />
         </div>
-        <div class='col-md-3 col-sm-6 col-xs-6 text-center''>
+        <div class='col-md-3 col-sm-6 col-xs-6 text-center animated wow bounceInRight'>
             <p>In progress ...</p>
             <img src='images/next.png' title='in progress' alt='in progress' />
         </div>
@@ -90,6 +89,32 @@
     <section id='projects' class='row'>
         <div class='col-xs-12 text-center'>
         <p>These are the projects that I made , try coming back once a month/week because I am updating this list very often</p>
+        <div id='owl' class='owl-carousel'>
+          <div >
+            <p>Bootstrap</p>
+            <img src='images/Bootstrap.png' title='Bootstrap' alt='Bootstrap' />
+        </div>
+        <div>
+            <p>In progress ...</p>
+            <img src='images/next.png' title='in progress' alt='in progress' />
+        </div>
+        <div >
+            <p>Bootstrap</p>
+            <img src='images/Bootstrap.png' title='Bootstrap' alt='Bootstrap' />
+        </div>
+        <div>
+            <p>In progress ...</p>
+            <img src='images/next.png' title='in progress' alt='in progress' />
+        </div>
+        <div >
+            <p>Bootstrap</p>
+            <img src='images/Bootstrap.png' title='Bootstrap' alt='Bootstrap' />
+        </div>
+        <div>
+            <p>In progress ...</p>
+            <img src='images/next.png' title='in progress' alt='in progress' />
+        </div>  
+        </div>
     </section>
     <footer id='contact' class='row'>
         <a href='https://github.com/amirmekk' target='_blank'>
@@ -105,8 +130,10 @@
             <img src='images/instagram.png' title='instagram' alt='instagram' />
         </a>
     </footer>
-    <script src="http://code.jquery.com/jquery-3.1.1.slim.js" integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA=" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script src='wow.js'></script>
+    <script src='owl.js' ></script>
     <script src='app.js' ></script>
-    <script script='wow.js'></script>
+
 </body>
 </html>

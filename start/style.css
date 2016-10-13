@@ -11,21 +11,15 @@ header {
     background: linear-gradient(to bottom right, #34495e, #16a085); 
     /* box-shadow : 0px 20px 5px #16a085 ; */
 }
-header ul {
-    padding : 1% ;
-    padding-bottom: -1% ;
-}
 header ul li {
     float : left;
     list-style-type: none ;
     margin-right: 5% ;
-    margin-top : 0.5% ;
-    margin-bottom: 0%; 
+    margin-top : 2% ;
     font-size : 150% ;
     border-radius: 5px ;
     color : white ;
 }
-
 .first_li {
     margin-left : 2% ;
     margin-top : 0.001% ;
@@ -39,6 +33,7 @@ header ul li a {
     color: inherit; 
     text-decoration: inherit;
 }
+/* 213471417624 */
 /* END of header styling  */ 
 
 /* about styling */
@@ -54,12 +49,7 @@ header ul li a {
 }
 #about img {
     border-radius : 10px ;
-    filter : grayscale(100%) ;
     border : 4px white solid ;
-}
-#about img:hover {
-    border-radius : 10px ;
-    filter : none ;
 }
 #about p {
     font-size: 150% ;
@@ -76,10 +66,10 @@ header ul li a {
 /* Skills styling*/
 #skills {
     background: #8e44ad;    
-    background: -webkit-linear-gradient(left top, #38e4c3, #8e44ad);
-    background: -o-linear-gradient(bottom right, #38e4c3, #8e44ad); 
-    background: -moz-linear-gradient(bottom right, #38e4c3 #8e44ad); 
-    background: linear-gradient(to bottom right, #38e4c3, #8e44ad);
+    background: -webkit-linear-gradient(right top, #38e4c3, #8e44ad);
+    background: -o-linear-gradient(bottom left, #38e4c3, #8e44ad); 
+    background: -moz-linear-gradient(bottom left, #38e4c3 #8e44ad); 
+    background: linear-gradient(to bottom left, #38e4c3, #8e44ad);
     margin-top : -2% ;
     color : white ;
 }
@@ -101,6 +91,17 @@ header ul li a {
 #skills .col-md-12 {
     margin-bottom : -3% ;
 }
+@media (max-width:700px){
+    #skills img{
+        width : 50% ;
+    }
+    #skills #first_p{
+        font-size : 170% ; 
+    }
+    #skills p:not(#first_p){
+        font-size : 120% ; 
+    }
+}
 /* END of Skills styling */
 /* PROJECTS styling */
 #projects {
@@ -110,10 +111,7 @@ header ul li a {
     background: -moz-linear-gradient(bottom right, #a563c1 #2c3e50); 
     background: linear-gradient(to bottom right, #a563c1, #2c3e50);
     color : white ;
-
 }
-
-
 /* END PROJECTS styling */
 /* FOOTER STYLING */
 footer {
@@ -123,10 +121,14 @@ footer {
     background: -moz-linear-gradient(right, #22303d , #4f6f8f); 
     background: linear-gradient(to right, #22303d, #4f6f8f);  
     text-align: center ;
-    margin-top : 5% ;
 }
 footer img {
     margin :1% ;
     width : 5%
+}
+@media (max-width:700px) {
+    footer img {
+        width : 11% ;
+    }
 }
 /* END of footer styling */
